@@ -1,0 +1,3305 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_b218fe7b1308456f9e331cbb7c80f12a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.2/leaflet-dvf.markers.min.js"></script>
+        
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_b218fe7b1308456f9e331cbb7c80f12a" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_b218fe7b1308456f9e331cbb7c80f12a = L.map('map_b218fe7b1308456f9e331cbb7c80f12a', {
+                                           center:[1.38,103.8],
+                                           zoom: 12,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_8944d74d0712469699eda54e8da16540 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+
+        
+        
+            
+            var regular_polygon_marker_646fbd8329c844d7b0637f0e6b621f21 = new L.RegularPolygonMarker(
+                new L.LatLng(1.42523896166,103.7621803),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_00bf50d4a3fa4a04b972b1aa6c3a94fe = L.popup({maxWidth: '300'});
+
+            
+                var html_20009eb4ffb64fc29a4c140846fd1bfa = $('         <div id="html_20009eb4ffb64fc29a4c140846fd1bfa"                 style="width: 100.0%; height: 100.0%;">                 Kranji</div>                 ')[0];
+                popup_00bf50d4a3fa4a04b972b1aa6c3a94fe.setContent(html_20009eb4ffb64fc29a4c140846fd1bfa);
+            
+
+            regular_polygon_marker_646fbd8329c844d7b0637f0e6b621f21.bindPopup(popup_00bf50d4a3fa4a04b972b1aa6c3a94fe);
+
+            
+        
+        
+            
+            var regular_polygon_marker_3cfa010c1b5f4b21a667a5982521531c = new L.RegularPolygonMarker(
+                new L.LatLng(1.29965581291,103.787393659),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_d08a9bfc2f5645e5b666f2d7b0f8cd51 = L.popup({maxWidth: '300'});
+
+            
+                var html_e874967d3d1a40159ca27824cc4e1c7f = $('         <div id="html_e874967d3d1a40159ca27824cc4e1c7f"                 style="width: 100.0%; height: 100.0%;">                 One North</div>                 ')[0];
+                popup_d08a9bfc2f5645e5b666f2d7b0f8cd51.setContent(html_e874967d3d1a40159ca27824cc4e1c7f);
+            
+
+            regular_polygon_marker_3cfa010c1b5f4b21a667a5982521531c.bindPopup(popup_d08a9bfc2f5645e5b666f2d7b0f8cd51);
+
+            
+        
+        
+            
+            var regular_polygon_marker_1005c6ea5d0548019e7402471354d491 = new L.RegularPolygonMarker(
+                new L.LatLng(1.3113959753,103.87131493),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e6dab70b9dd84437bfa0309e88a3123a = L.popup({maxWidth: '300'});
+
+            
+                var html_a5a87879ff7245a38b22a670bc34c9db = $('         <div id="html_a5a87879ff7245a38b22a670bc34c9db"                 style="width: 100.0%; height: 100.0%;">                 Kallang</div>                 ')[0];
+                popup_e6dab70b9dd84437bfa0309e88a3123a.setContent(html_a5a87879ff7245a38b22a670bc34c9db);
+            
+
+            regular_polygon_marker_1005c6ea5d0548019e7402471354d491.bindPopup(popup_e6dab70b9dd84437bfa0309e88a3123a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4abc6b26b0ae445fabeabc151b66b3f7 = new L.RegularPolygonMarker(
+                new L.LatLng(1.34214430951,103.732814061),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_95ef0c45f64344ed85401d8b65356547 = L.popup({maxWidth: '300'});
+
+            
+                var html_bb41ab9727b74a4dba130993ec2b2ede = $('         <div id="html_bb41ab9727b74a4dba130993ec2b2ede"                 style="width: 100.0%; height: 100.0%;">                 Chinese Garden</div>                 ')[0];
+                popup_95ef0c45f64344ed85401d8b65356547.setContent(html_bb41ab9727b74a4dba130993ec2b2ede);
+            
+
+            regular_polygon_marker_4abc6b26b0ae445fabeabc151b66b3f7.bindPopup(popup_95ef0c45f64344ed85401d8b65356547);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2a6df83a8054425c80ec7e613f9d1256 = new L.RegularPolygonMarker(
+                new L.LatLng(1.3532885249,103.945158674),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_976485dfd9cc45bc96d9fff793e6f7ee = L.popup({maxWidth: '300'});
+
+            
+                var html_8b46cd56b6794354a94593ed500a24a2 = $('         <div id="html_8b46cd56b6794354a94593ed500a24a2"                 style="width: 100.0%; height: 100.0%;">                 Tampines</div>                 ')[0];
+                popup_976485dfd9cc45bc96d9fff793e6f7ee.setContent(html_8b46cd56b6794354a94593ed500a24a2);
+            
+
+            regular_polygon_marker_2a6df83a8054425c80ec7e613f9d1256.bindPopup(popup_976485dfd9cc45bc96d9fff793e6f7ee);
+
+            
+        
+        
+            
+            var regular_polygon_marker_341e2794718f441b91124dcc86abcbcd = new L.RegularPolygonMarker(
+                new L.LatLng(1.32636737033,103.890261164),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_75b3546072ba48dc824c981046c82d1b = L.popup({maxWidth: '300'});
+
+            
+                var html_de130561e895427a923bc1a396a1f6ad = $('         <div id="html_de130561e895427a923bc1a396a1f6ad"                 style="width: 100.0%; height: 100.0%;">                 Macpherson</div>                 ')[0];
+                popup_75b3546072ba48dc824c981046c82d1b.setContent(html_de130561e895427a923bc1a396a1f6ad);
+            
+
+            regular_polygon_marker_341e2794718f441b91124dcc86abcbcd.bindPopup(popup_75b3546072ba48dc824c981046c82d1b);
+
+            
+        
+        
+            
+            var regular_polygon_marker_79273791e1c441b696e8a1d45b13cfbf = new L.RegularPolygonMarker(
+                new L.LatLng(1.29461066566,103.806044903),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_112cecc1116145bf81d468a90bf19676 = L.popup({maxWidth: '300'});
+
+            
+                var html_8448b613786d4498990f735fcb87d9c3 = $('         <div id="html_8448b613786d4498990f735fcb87d9c3"                 style="width: 100.0%; height: 100.0%;">                 Queenstown</div>                 ')[0];
+                popup_112cecc1116145bf81d468a90bf19676.setContent(html_8448b613786d4498990f735fcb87d9c3);
+            
+
+            regular_polygon_marker_79273791e1c441b696e8a1d45b13cfbf.bindPopup(popup_112cecc1116145bf81d468a90bf19676);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2493f5e3786b4cbd9ee16a44cace32d5 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30715996433,103.849309396),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_bf6dee833c234488ad1175c2ac37b024 = L.popup({maxWidth: '300'});
+
+            
+                var html_1c9d11b17dd04d979e538eff33957df3 = $('         <div id="html_1c9d11b17dd04d979e538eff33957df3"                 style="width: 100.0%; height: 100.0%;">                 Little India</div>                 ')[0];
+                popup_bf6dee833c234488ad1175c2ac37b024.setContent(html_1c9d11b17dd04d979e538eff33957df3);
+            
+
+            regular_polygon_marker_2493f5e3786b4cbd9ee16a44cace32d5.bindPopup(popup_bf6dee833c234488ad1175c2ac37b024);
+
+            
+        
+        
+            
+            var regular_polygon_marker_ef64bec417cc44a1bbadd4cdaf3b9bd2 = new L.RegularPolygonMarker(
+                new L.LatLng(1.31745390414,103.807488791),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_db28465c3a7a49d8b8f31ccfded31177 = L.popup({maxWidth: '300'});
+
+            
+                var html_b1fff81f1c824033be7c755273c2e573 = $('         <div id="html_b1fff81f1c824033be7c755273c2e573"                 style="width: 100.0%; height: 100.0%;">                 Farrer Road</div>                 ')[0];
+                popup_db28465c3a7a49d8b8f31ccfded31177.setContent(html_b1fff81f1c824033be7c755273c2e573);
+            
+
+            regular_polygon_marker_ef64bec417cc44a1bbadd4cdaf3b9bd2.bindPopup(popup_db28465c3a7a49d8b8f31ccfded31177);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2dbcf2c82e55481393fd4e9981509545 = new L.RegularPolygonMarker(
+                new L.LatLng(1.31977856466,103.903361485),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_2fe5735d04f54ab89f8d4a7219052ca9 = L.popup({maxWidth: '300'});
+
+            
+                var html_89a9fd83593940e6bbc61456faf78b50 = $('         <div id="html_89a9fd83593940e6bbc61456faf78b50"                 style="width: 100.0%; height: 100.0%;">                 Eunos</div>                 ')[0];
+                popup_2fe5735d04f54ab89f8d4a7219052ca9.setContent(html_89a9fd83593940e6bbc61456faf78b50);
+            
+
+            regular_polygon_marker_2dbcf2c82e55481393fd4e9981509545.bindPopup(popup_2fe5735d04f54ab89f8d4a7219052ca9);
+
+            
+        
+        
+            
+            var regular_polygon_marker_8a3a4ffb0182475ab812389924b80fb6 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30676024609,103.790384443),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_da469b7c56cd4228a5bc03afeea852c8 = L.popup({maxWidth: '300'});
+
+            
+                var html_2d7488feb1ed49c792a75458eaab57f7 = $('         <div id="html_2d7488feb1ed49c792a75458eaab57f7"                 style="width: 100.0%; height: 100.0%;">                 Buona Vista</div>                 ')[0];
+                popup_da469b7c56cd4228a5bc03afeea852c8.setContent(html_2d7488feb1ed49c792a75458eaab57f7);
+            
+
+            regular_polygon_marker_8a3a4ffb0182475ab812389924b80fb6.bindPopup(popup_da469b7c56cd4228a5bc03afeea852c8);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e0667f0d58f54214b35965521cbde31c = new L.RegularPolygonMarker(
+                new L.LatLng(1.33267672627,103.847420883),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_4166085729184049abbf4c7f88a03207 = L.popup({maxWidth: '300'});
+
+            
+                var html_878ba660c5c04b03ab08a0312d20bbb9 = $('         <div id="html_878ba660c5c04b03ab08a0312d20bbb9"                 style="width: 100.0%; height: 100.0%;">                 Toa Payoh</div>                 ')[0];
+                popup_4166085729184049abbf4c7f88a03207.setContent(html_878ba660c5c04b03ab08a0312d20bbb9);
+            
+
+            regular_polygon_marker_e0667f0d58f54214b35965521cbde31c.bindPopup(popup_4166085729184049abbf4c7f88a03207);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7129f4d9319f4e8cbb716cc9b37af740 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30285343332,103.875347631),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_739c86450675442ba43c433c152c93b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_20b2ada9ccd24c3dac318026d351c157 = $('         <div id="html_20b2ada9ccd24c3dac318026d351c157"                 style="width: 100.0%; height: 100.0%;">                 Stadium</div>                 ')[0];
+                popup_739c86450675442ba43c433c152c93b0.setContent(html_20b2ada9ccd24c3dac318026d351c157);
+            
+
+            regular_polygon_marker_7129f4d9319f4e8cbb716cc9b37af740.bindPopup(popup_739c86450675442ba43c433c152c93b0);
+
+            
+        
+        
+            
+            var regular_polygon_marker_89bcf95288ac4060b652115b89ba29c6 = new L.RegularPolygonMarker(
+                new L.LatLng(1.28187124484,103.859076121),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_476b586baeb445b6a35c0ac7556cf7a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_aa6c75291c9e439c8e82a28c4bdf4082 = $('         <div id="html_aa6c75291c9e439c8e82a28c4bdf4082"                 style="width: 100.0%; height: 100.0%;">                 Bayfront</div>                 ')[0];
+                popup_476b586baeb445b6a35c0ac7556cf7a8.setContent(html_aa6c75291c9e439c8e82a28c4bdf4082);
+            
+
+            regular_polygon_marker_89bcf95288ac4060b652115b89ba29c6.bindPopup(popup_476b586baeb445b6a35c0ac7556cf7a8);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b9626f955ba64698a65525190a398a91 = new L.RegularPolygonMarker(
+                new L.LatLng(1.35161908924,103.864143793),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_06ef3620e7f24669b2401d79af28e94b = L.popup({maxWidth: '300'});
+
+            
+                var html_b7f38d34156a4843ab34b3f5a42c2a4e = $('         <div id="html_b7f38d34156a4843ab34b3f5a42c2a4e"                 style="width: 100.0%; height: 100.0%;">                 Lorong Chuan</div>                 ')[0];
+                popup_06ef3620e7f24669b2401d79af28e94b.setContent(html_b7f38d34156a4843ab34b3f5a42c2a4e);
+            
+
+            regular_polygon_marker_b9626f955ba64698a65525190a398a91.bindPopup(popup_06ef3620e7f24669b2401d79af28e94b);
+
+            
+        
+        
+            
+            var regular_polygon_marker_df834bcc95cc4bb6b882758706eb88c9 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33920642074,103.870808857),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_724cbc860fc7440e884d1b90e4567a86 = L.popup({maxWidth: '300'});
+
+            
+                var html_d3eb8db361a941b3bca1ff7bbe3da411 = $('         <div id="html_d3eb8db361a941b3bca1ff7bbe3da411"                 style="width: 100.0%; height: 100.0%;">                 Woodleigh</div>                 ')[0];
+                popup_724cbc860fc7440e884d1b90e4567a86.setContent(html_d3eb8db361a941b3bca1ff7bbe3da411);
+            
+
+            regular_polygon_marker_df834bcc95cc4bb6b882758706eb88c9.bindPopup(popup_724cbc860fc7440e884d1b90e4567a86);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b0e19b647e424fca90a8fd3c0d2ef609 = new L.RegularPolygonMarker(
+                new L.LatLng(1.27627843325,103.854838719),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_3ea26e5b87b74455a7214815103503ca = L.popup({maxWidth: '300'});
+
+            
+                var html_94d4f3fb8c584a1293b990e0c97bd611 = $('         <div id="html_94d4f3fb8c584a1293b990e0c97bd611"                 style="width: 100.0%; height: 100.0%;">                 Marina Bay</div>                 ')[0];
+                popup_3ea26e5b87b74455a7214815103503ca.setContent(html_94d4f3fb8c584a1293b990e0c97bd611);
+            
+
+            regular_polygon_marker_b0e19b647e424fca90a8fd3c0d2ef609.bindPopup(popup_3ea26e5b87b74455a7214815103503ca);
+
+            
+        
+        
+            
+            var regular_polygon_marker_df6a94d6841346a0a3db068bbe33acfc = new L.RegularPolygonMarker(
+                new L.LatLng(1.44906896709,103.820193529),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e38d7d7de8554161aafe8a0559ab0fe9 = L.popup({maxWidth: '300'});
+
+            
+                var html_ad335101238042bcb2c7f18e2c92a5c3 = $('         <div id="html_ad335101238042bcb2c7f18e2c92a5c3"                 style="width: 100.0%; height: 100.0%;">                 Sembawang</div>                 ')[0];
+                popup_e38d7d7de8554161aafe8a0559ab0fe9.setContent(html_ad335101238042bcb2c7f18e2c92a5c3);
+            
+
+            regular_polygon_marker_df6a94d6841346a0a3db068bbe33acfc.bindPopup(popup_e38d7d7de8554161aafe8a0559ab0fe9);
+
+            
+        
+        
+            
+            var regular_polygon_marker_6ac41760db93485a938aa9b3affaa56c = new L.RegularPolygonMarker(
+                new L.LatLng(1.31139402362,103.778648822),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_2db82de75d614500974d8b081049d742 = L.popup({maxWidth: '300'});
+
+            
+                var html_40b33150244044bd9dcd91601d3f45aa = $('         <div id="html_40b33150244044bd9dcd91601d3f45aa"                 style="width: 100.0%; height: 100.0%;">                 Dover</div>                 ')[0];
+                popup_2db82de75d614500974d8b081049d742.setContent(html_40b33150244044bd9dcd91601d3f45aa);
+            
+
+            regular_polygon_marker_6ac41760db93485a938aa9b3affaa56c.bindPopup(popup_2db82de75d614500974d8b081049d742);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7e06c97cb8e2490fa42fbe397fc38b5f = new L.RegularPolygonMarker(
+                new L.LatLng(1.27944082066,103.852850792),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_1188d1b74daa489ab4be0e94efb4a107 = L.popup({maxWidth: '300'});
+
+            
+                var html_54f1793891564b47ae5e7f8037a93ce5 = $('         <div id="html_54f1793891564b47ae5e7f8037a93ce5"                 style="width: 100.0%; height: 100.0%;">                 Downtown</div>                 ')[0];
+                popup_1188d1b74daa489ab4be0e94efb4a107.setContent(html_54f1793891564b47ae5e7f8037a93ce5);
+            
+
+            regular_polygon_marker_7e06c97cb8e2490fa42fbe397fc38b5f.bindPopup(popup_1188d1b74daa489ab4be0e94efb4a107);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e91b47258d5e4d8bb16bc6b4438f0abd = new L.RegularPolygonMarker(
+                new L.LatLng(1.3258699376,103.807330532),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_025dafbd417841d4b1fb2b6855759412 = L.popup({maxWidth: '300'});
+
+            
+                var html_4c8fbdb8a517427e9b313937eac0a266 = $('         <div id="html_4c8fbdb8a517427e9b313937eac0a266"                 style="width: 100.0%; height: 100.0%;">                 Tan Kah Kee</div>                 ')[0];
+                popup_025dafbd417841d4b1fb2b6855759412.setContent(html_4c8fbdb8a517427e9b313937eac0a266);
+            
+
+            regular_polygon_marker_e91b47258d5e4d8bb16bc6b4438f0abd.bindPopup(popup_025dafbd417841d4b1fb2b6855759412);
+
+            
+        
+        
+            
+            var regular_polygon_marker_cf349dc091bf401092a0a0f1aebe4db2 = new L.RegularPolygonMarker(
+                new L.LatLng(1.34877598948,103.839412512),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_456d0ca9ec014292aeef93171e07deb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_c69ab4419efb4afcb7fd6a14b7ee9dec = $('         <div id="html_c69ab4419efb4afcb7fd6a14b7ee9dec"                 style="width: 100.0%; height: 100.0%;">                 Marymount</div>                 ')[0];
+                popup_456d0ca9ec014292aeef93171e07deb0.setContent(html_c69ab4419efb4afcb7fd6a14b7ee9dec);
+            
+
+            regular_polygon_marker_cf349dc091bf401092a0a0f1aebe4db2.bindPopup(popup_456d0ca9ec014292aeef93171e07deb0);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2678ba726737449e8ac7f7eb25dd2f81 = new L.RegularPolygonMarker(
+                new L.LatLng(1.3573072645,103.988370247),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c8401e400b96428fbcf4ce1eb44e415a = L.popup({maxWidth: '300'});
+
+            
+                var html_24dc43f7aeee487db9b2caa2ce68d973 = $('         <div id="html_24dc43f7aeee487db9b2caa2ce68d973"                 style="width: 100.0%; height: 100.0%;">                 Changi Airport</div>                 ')[0];
+                popup_c8401e400b96428fbcf4ce1eb44e415a.setContent(html_24dc43f7aeee487db9b2caa2ce68d973);
+            
+
+            regular_polygon_marker_2678ba726737449e8ac7f7eb25dd2f81.bindPopup(popup_c8401e400b96428fbcf4ce1eb44e415a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e3098cb1e76740199546128f673bb47c = new L.RegularPolygonMarker(
+                new L.LatLng(1.27622900364,103.791341632),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_868cd8e2ff9247809bad456c3ee925d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_f58a3c642ce44508aaf4e8af3dc75296 = $('         <div id="html_f58a3c642ce44508aaf4e8af3dc75296"                 style="width: 100.0%; height: 100.0%;">                 Pasir Panjang</div>                 ')[0];
+                popup_868cd8e2ff9247809bad456c3ee925d2.setContent(html_f58a3c642ce44508aaf4e8af3dc75296);
+            
+
+            regular_polygon_marker_e3098cb1e76740199546128f673bb47c.bindPopup(popup_868cd8e2ff9247809bad456c3ee925d2);
+
+            
+        
+        
+            
+            var regular_polygon_marker_321301c0d32b4c229cc673a765afcc9f = new L.RegularPolygonMarker(
+                new L.LatLng(1.38510027801,103.74440531),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_263a6536511e4c76810a60176a705976 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f96c132e4ec4296b9124b6bbbf547e1 = $('         <div id="html_2f96c132e4ec4296b9124b6bbbf547e1"                 style="width: 100.0%; height: 100.0%;">                 Choa Chu Kang</div>                 ')[0];
+                popup_263a6536511e4c76810a60176a705976.setContent(html_2f96c132e4ec4296b9124b6bbbf547e1);
+            
+
+            regular_polygon_marker_321301c0d32b4c229cc673a765afcc9f.bindPopup(popup_263a6536511e4c76810a60176a705976);
+
+            
+        
+        
+            
+            var regular_polygon_marker_576a7483133d4b0d8a2fd4759a5ca804 = new L.RegularPolygonMarker(
+                new L.LatLng(1.29315783609,103.860962203),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_00463c3bf88d4b8585bc9eea74dbd2fd = L.popup({maxWidth: '300'});
+
+            
+                var html_1442903e974d4e87a48b2ff22b59bea0 = $('         <div id="html_1442903e974d4e87a48b2ff22b59bea0"                 style="width: 100.0%; height: 100.0%;">                 Promenade</div>                 ')[0];
+                popup_00463c3bf88d4b8585bc9eea74dbd2fd.setContent(html_1442903e974d4e87a48b2ff22b59bea0);
+            
+
+            regular_polygon_marker_576a7483133d4b0d8a2fd4759a5ca804.bindPopup(popup_00463c3bf88d4b8585bc9eea74dbd2fd);
+
+            
+        
+        
+            
+            var regular_polygon_marker_aac10b73025d4c6a80ec00240985c717 = new L.RegularPolygonMarker(
+                new L.LatLng(1.27137671452,103.862910559),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c508c50705cf4b32a59fc1562f76817c = L.popup({maxWidth: '300'});
+
+            
+                var html_5b0be63d3ea74a8cb08cc112c108eaeb = $('         <div id="html_5b0be63d3ea74a8cb08cc112c108eaeb"                 style="width: 100.0%; height: 100.0%;">                 Marina South Pier</div>                 ')[0];
+                popup_c508c50705cf4b32a59fc1562f76817c.setContent(html_5b0be63d3ea74a8cb08cc112c108eaeb);
+            
+
+            regular_polygon_marker_aac10b73025d4c6a80ec00240985c717.bindPopup(popup_c508c50705cf4b32a59fc1562f76817c);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7e578f40e88148ef88bbdab2b40452e8 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33758583464,103.697318194),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_80a812429a5940619b6102a3326180d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_300eac4f94ea42d58f2d87d1df19ada2 = $('         <div id="html_300eac4f94ea42d58f2d87d1df19ada2"                 style="width: 100.0%; height: 100.0%;">                 Pioneer</div>                 ')[0];
+                popup_80a812429a5940619b6102a3326180d9.setContent(html_300eac4f94ea42d58f2d87d1df19ada2);
+            
+
+            regular_polygon_marker_7e578f40e88148ef88bbdab2b40452e8.bindPopup(popup_80a812429a5940619b6102a3326180d9);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2b1584ff68b1471e943b21097ff413cb = new L.RegularPolygonMarker(
+                new L.LatLng(1.26545668172,103.821450401),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_3ca6164d2b6b4e4abc3b26551e3531d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_5584de20de17403886b3d755d6721bbf = $('         <div id="html_5584de20de17403886b3d755d6721bbf"                 style="width: 100.0%; height: 100.0%;">                 Habourfront</div>                 ')[0];
+                popup_3ca6164d2b6b4e4abc3b26551e3531d4.setContent(html_5584de20de17403886b3d755d6721bbf);
+            
+
+            regular_polygon_marker_2b1584ff68b1471e943b21097ff413cb.bindPopup(popup_3ca6164d2b6b4e4abc3b26551e3531d4);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7310191da1c0405d8c60046bac7d1e39 = new L.RegularPolygonMarker(
+                new L.LatLng(1.28961887271,103.816789695),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_d8272e58510049c3a3a60c4666af5f8e = L.popup({maxWidth: '300'});
+
+            
+                var html_d24c1a2e1d2f4bc99205eaf18f1f9e77 = $('         <div id="html_d24c1a2e1d2f4bc99205eaf18f1f9e77"                 style="width: 100.0%; height: 100.0%;">                 Redhill</div>                 ')[0];
+                popup_d8272e58510049c3a3a60c4666af5f8e.setContent(html_d24c1a2e1d2f4bc99205eaf18f1f9e77);
+            
+
+            regular_polygon_marker_7310191da1c0405d8c60046bac7d1e39.bindPopup(popup_d8272e58510049c3a3a60c4666af5f8e);
+
+            
+        
+        
+            
+            var regular_polygon_marker_28a620c68eda4e6c8702dfb6bc09afe4 = new L.RegularPolygonMarker(
+                new L.LatLng(1.37128050853,103.892347201),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_b34757fcfd8f4b14bca94afe4a38f868 = L.popup({maxWidth: '300'});
+
+            
+                var html_90b84c4b94f04d5c83a3a3ddff071f7c = $('         <div id="html_90b84c4b94f04d5c83a3a3ddff071f7c"                 style="width: 100.0%; height: 100.0%;">                 Hougang</div>                 ')[0];
+                popup_b34757fcfd8f4b14bca94afe4a38f868.setContent(html_90b84c4b94f04d5c83a3a3ddff071f7c);
+            
+
+            regular_polygon_marker_28a620c68eda4e6c8702dfb6bc09afe4.bindPopup(popup_b34757fcfd8f4b14bca94afe4a38f868);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4fe93dd7363543768483d7e84cf222c1 = new L.RegularPolygonMarker(
+                new L.LatLng(1.34044344784,103.846799566),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_487fbf281115441fb052b6baf05461e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b4392196575a4aa6977a6effb34b5660 = $('         <div id="html_b4392196575a4aa6977a6effb34b5660"                 style="width: 100.0%; height: 100.0%;">                 Braddell</div>                 ')[0];
+                popup_487fbf281115441fb052b6baf05461e4.setContent(html_b4392196575a4aa6977a6effb34b5660);
+            
+
+            regular_polygon_marker_4fe93dd7363543768483d7e84cf222c1.bindPopup(popup_487fbf281115441fb052b6baf05461e4);
+
+            
+        
+        
+            
+            var regular_polygon_marker_624353cfac6f48a9b7abd30b990ec32c = new L.RegularPolygonMarker(
+                new L.LatLng(1.29980216322,103.863632804),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_f4d094352c954a7c91b9a9c03fbafd98 = L.popup({maxWidth: '300'});
+
+            
+                var html_c6ded1c18b294b728dd3b5e5e3380437 = $('         <div id="html_c6ded1c18b294b728dd3b5e5e3380437"                 style="width: 100.0%; height: 100.0%;">                 Nicoll Highway</div>                 ')[0];
+                popup_f4d094352c954a7c91b9a9c03fbafd98.setContent(html_c6ded1c18b294b728dd3b5e5e3380437);
+            
+
+            regular_polygon_marker_624353cfac6f48a9b7abd30b990ec32c.bindPopup(popup_f4d094352c954a7c91b9a9c03fbafd98);
+
+            
+        
+        
+            
+            var regular_polygon_marker_20798daaf70144708aee0dd5f7a82ae0 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33078419107,103.797320127),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_357489717684477eace49a9aa3139031 = L.popup({maxWidth: '300'});
+
+            
+                var html_38964f8cf69a4142a721c3d20bffb1f0 = $('         <div id="html_38964f8cf69a4142a721c3d20bffb1f0"                 style="width: 100.0%; height: 100.0%;">                 Sixth Avenue</div>                 ')[0];
+                popup_357489717684477eace49a9aa3139031.setContent(html_38964f8cf69a4142a721c3d20bffb1f0);
+            
+
+            regular_polygon_marker_20798daaf70144708aee0dd5f7a82ae0.bindPopup(popup_357489717684477eace49a9aa3139031);
+
+            
+        
+        
+            
+            var regular_polygon_marker_854447731ae84ecb9e1e2712c1754a7b = new L.RegularPolygonMarker(
+                new L.LatLng(1.33138672232,103.869069625),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_3c3fb2ef03044ea0a0e0c81e6aa134aa = L.popup({maxWidth: '300'});
+
+            
+                var html_f5d4448e1d56478d8b1309a3155a0e91 = $('         <div id="html_f5d4448e1d56478d8b1309a3155a0e91"                 style="width: 100.0%; height: 100.0%;">                 Potong Pasir</div>                 ')[0];
+                popup_3c3fb2ef03044ea0a0e0c81e6aa134aa.setContent(html_f5d4448e1d56478d8b1309a3155a0e91);
+            
+
+            regular_polygon_marker_854447731ae84ecb9e1e2712c1754a7b.bindPopup(popup_3c3fb2ef03044ea0a0e0c81e6aa134aa);
+
+            
+        
+        
+            
+            var regular_polygon_marker_a20829c036c1480cadbd52f9ca0ced3f = new L.RegularPolygonMarker(
+                new L.LatLng(1.33320835773,103.7422629),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_4d23839f632547fe83dc0d696ad72fe0 = L.popup({maxWidth: '300'});
+
+            
+                var html_a9407b8cdbfd4314881a42c90129ce8f = $('         <div id="html_a9407b8cdbfd4314881a42c90129ce8f"                 style="width: 100.0%; height: 100.0%;">                 Jurong East Interchange</div>                 ')[0];
+                popup_4d23839f632547fe83dc0d696ad72fe0.setContent(html_a9407b8cdbfd4314881a42c90129ce8f);
+            
+
+            regular_polygon_marker_a20829c036c1480cadbd52f9ca0ced3f.bindPopup(popup_4d23839f632547fe83dc0d696ad72fe0);
+
+            
+        
+        
+            
+            var regular_polygon_marker_178b209e1f2148238f8fcaa271aaab54 = new L.RegularPolygonMarker(
+                new L.LatLng(1.34426248343,103.720964987),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_ff6ba3cd399b48458907d94d2ffe0061 = L.popup({maxWidth: '300'});
+
+            
+                var html_387800e27e4e4703b1224321bd2d86b8 = $('         <div id="html_387800e27e4e4703b1224321bd2d86b8"                 style="width: 100.0%; height: 100.0%;">                 Lakeside</div>                 ')[0];
+                popup_ff6ba3cd399b48458907d94d2ffe0061.setContent(html_387800e27e4e4703b1224321bd2d86b8);
+            
+
+            regular_polygon_marker_178b209e1f2148238f8fcaa271aaab54.bindPopup(popup_ff6ba3cd399b48458907d94d2ffe0061);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b6a1f86764fd47a99b2989628e3d8e2c = new L.RegularPolygonMarker(
+                new L.LatLng(1.30012967087,103.856281479),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_00bdee4db7ad4159be2376babf92a712 = L.popup({maxWidth: '300'});
+
+            
+                var html_03e0a6fcc97644a1a4b57ad57ea1eaa8 = $('         <div id="html_03e0a6fcc97644a1a4b57ad57ea1eaa8"                 style="width: 100.0%; height: 100.0%;">                 Bugis</div>                 ')[0];
+                popup_00bdee4db7ad4159be2376babf92a712.setContent(html_03e0a6fcc97644a1a4b57ad57ea1eaa8);
+            
+
+            regular_polygon_marker_b6a1f86764fd47a99b2989628e3d8e2c.bindPopup(popup_00bdee4db7ad4159be2376babf92a712);
+
+            
+        
+        
+            
+            var regular_polygon_marker_1175158932ef490b9e78210ef83eb041 = new L.RegularPolygonMarker(
+                new L.LatLng(1.34120289607,103.775818644),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c1ce12e1e6c14616b72e6fd7c9f496ed = L.popup({maxWidth: '300'});
+
+            
+                var html_8adb1b8b544a44a885a1467a54d63497 = $('         <div id="html_8adb1b8b544a44a885a1467a54d63497"                 style="width: 100.0%; height: 100.0%;">                 Beauty World</div>                 ')[0];
+                popup_c1ce12e1e6c14616b72e6fd7c9f496ed.setContent(html_8adb1b8b544a44a885a1467a54d63497);
+            
+
+            regular_polygon_marker_1175158932ef490b9e78210ef83eb041.bindPopup(popup_c1ce12e1e6c14616b72e6fd7c9f496ed);
+
+            
+        
+        
+            
+            var regular_polygon_marker_af38f65b85b44709ab9c665f1cc3fe47 = new L.RegularPolygonMarker(
+                new L.LatLng(1.32222863323,103.815468897),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_680d104177c24c0db8262d19f3cfd9fb = L.popup({maxWidth: '300'});
+
+            
+                var html_8bfeadebb5c640d6b629fabc7d3511ee = $('         <div id="html_8bfeadebb5c640d6b629fabc7d3511ee"                 style="width: 100.0%; height: 100.0%;">                 Botanic Gardens</div>                 ')[0];
+                popup_680d104177c24c0db8262d19f3cfd9fb.setContent(html_8bfeadebb5c640d6b629fabc7d3511ee);
+            
+
+            regular_polygon_marker_af38f65b85b44709ab9c665f1cc3fe47.bindPopup(popup_680d104177c24c0db8262d19f3cfd9fb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_581aac5c1df04d16b9e9f50503a069f3 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33545243682,103.888164142),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_97221c6ad17a400a84439373a8edb593 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5e68fd819294f90a198e45b35f563e8 = $('         <div id="html_c5e68fd819294f90a198e45b35f563e8"                 style="width: 100.0%; height: 100.0%;">                 Tai Seng</div>                 ')[0];
+                popup_97221c6ad17a400a84439373a8edb593.setContent(html_c5e68fd819294f90a198e45b35f563e8);
+            
+
+            regular_polygon_marker_581aac5c1df04d16b9e9f50503a069f3.bindPopup(popup_97221c6ad17a400a84439373a8edb593);
+
+            
+        
+        
+            
+            var regular_polygon_marker_62ad8d6d681147c29adeec73d3616b43 = new L.RegularPolygonMarker(
+                new L.LatLng(1.31507756026,103.765232695),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_5bbbdf01f511412894b7ab8e843feb8a = L.popup({maxWidth: '300'});
+
+            
+                var html_c918d11dca7e429ea5641bc2e09bea02 = $('         <div id="html_c918d11dca7e429ea5641bc2e09bea02"                 style="width: 100.0%; height: 100.0%;">                 Clementi</div>                 ')[0];
+                popup_5bbbdf01f511412894b7ab8e843feb8a.setContent(html_c918d11dca7e429ea5641bc2e09bea02);
+            
+
+            regular_polygon_marker_62ad8d6d681147c29adeec73d3616b43.bindPopup(popup_5bbbdf01f511412894b7ab8e843feb8a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_6362591f7d9d401eb6aeee5123efa0ed = new L.RegularPolygonMarker(
+                new L.LatLng(1.2862190736,103.827034008),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_32b3259ebea04b2882f6dab412e55cfa = L.popup({maxWidth: '300'});
+
+            
+                var html_2a6f763502824d29a0eecfbec8cff467 = $('         <div id="html_2a6f763502824d29a0eecfbec8cff467"                 style="width: 100.0%; height: 100.0%;">                 Tiong Bahru</div>                 ')[0];
+                popup_32b3259ebea04b2882f6dab412e55cfa.setContent(html_2a6f763502824d29a0eecfbec8cff467);
+            
+
+            regular_polygon_marker_6362591f7d9d401eb6aeee5123efa0ed.bindPopup(popup_32b3259ebea04b2882f6dab412e55cfa);
+
+            
+        
+        
+            
+            var regular_polygon_marker_618a12bdf81c4bfd89708f498a6842ba = new L.RegularPolygonMarker(
+                new L.LatLng(1.32725341524,103.94654761),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_28f8d57459c544c7a2ab42e156d38e8d = L.popup({maxWidth: '300'});
+
+            
+                var html_c8a9bfa71a294ab1b976c1839a7bbb07 = $('         <div id="html_c8a9bfa71a294ab1b976c1839a7bbb07"                 style="width: 100.0%; height: 100.0%;">                 Tanah Merah Interchange</div>                 ')[0];
+                popup_28f8d57459c544c7a2ab42e156d38e8d.setContent(html_c8a9bfa71a294ab1b976c1839a7bbb07);
+            
+
+            regular_polygon_marker_618a12bdf81c4bfd89708f498a6842ba.bindPopup(popup_28f8d57459c544c7a2ab42e156d38e8d);
+
+            
+        
+        
+            
+            var regular_polygon_marker_9fceb6dffb12489b9944d3d4402ba64a = new L.RegularPolygonMarker(
+                new L.LatLng(1.31295771835,103.838038162),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c8233ffd8ba142428992e66a361caacc = L.popup({maxWidth: '300'});
+
+            
+                var html_f9faa72e82214d58912f8bd4b2deeef6 = $('         <div id="html_f9faa72e82214d58912f8bd4b2deeef6"                 style="width: 100.0%; height: 100.0%;">                 Newton</div>                 ')[0];
+                popup_c8233ffd8ba142428992e66a361caacc.setContent(html_f9faa72e82214d58912f8bd4b2deeef6);
+            
+
+            regular_polygon_marker_9fceb6dffb12489b9944d3d4402ba64a.bindPopup(popup_c8233ffd8ba142428992e66a361caacc);
+
+            
+        
+        
+            
+            var regular_polygon_marker_fb6f616947d042099851f5e5dc1e85be = new L.RegularPolygonMarker(
+                new L.LatLng(1.31194495082,103.796233003),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_8442dc4cc94d4165be560764ba4b671c = L.popup({maxWidth: '300'});
+
+            
+                var html_e094534ece384abeb56872a486df1f32 = $('         <div id="html_e094534ece384abeb56872a486df1f32"                 style="width: 100.0%; height: 100.0%;">                 Holland Village</div>                 ')[0];
+                popup_8442dc4cc94d4165be560764ba4b671c.setContent(html_e094534ece384abeb56872a486df1f32);
+            
+
+            regular_polygon_marker_fb6f616947d042099851f5e5dc1e85be.bindPopup(popup_8442dc4cc94d4165be560764ba4b671c);
+
+            
+        
+        
+            
+            var regular_polygon_marker_6a5d4bd2eb9b42ab8153c3888c02f7c8 = new L.RegularPolygonMarker(
+                new L.LatLng(1.42958108523,103.834971829),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_7f43cc26259e428ea6a81668604d93bb = L.popup({maxWidth: '300'});
+
+            
+                var html_ab869af025d04093979db326cc9fea40 = $('         <div id="html_ab869af025d04093979db326cc9fea40"                 style="width: 100.0%; height: 100.0%;">                 Yishun</div>                 ')[0];
+                popup_7f43cc26259e428ea6a81668604d93bb.setContent(html_ab869af025d04093979db326cc9fea40);
+            
+
+            regular_polygon_marker_6a5d4bd2eb9b42ab8153c3888c02f7c8.bindPopup(popup_7f43cc26259e428ea6a81668604d93bb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_853b1ae547be442893c8c80973957687 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30619312032,103.882546682),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_75f68092a4bc41b898ef3a8784579450 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca97a58606694a7e9f897f6a5077eb8a = $('         <div id="html_ca97a58606694a7e9f897f6a5077eb8a"                 style="width: 100.0%; height: 100.0%;">                 Mountbatten</div>                 ')[0];
+                popup_75f68092a4bc41b898ef3a8784579450.setContent(html_ca97a58606694a7e9f897f6a5077eb8a);
+            
+
+            regular_polygon_marker_853b1ae547be442893c8c80973957687.bindPopup(popup_75f68092a4bc41b898ef3a8784579450);
+
+            
+        
+        
+            
+            var regular_polygon_marker_87df346533724683b573344ee352083a = new L.RegularPolygonMarker(
+                new L.LatLng(1.39754896658,103.74740176),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_0ff6410e369d4863a91008dc0d3f893d = L.popup({maxWidth: '300'});
+
+            
+                var html_d4db51258b89403c9fbda4ec291e6181 = $('         <div id="html_d4db51258b89403c9fbda4ec291e6181"                 style="width: 100.0%; height: 100.0%;">                 Yew Tee</div>                 ')[0];
+                popup_0ff6410e369d4863a91008dc0d3f893d.setContent(html_d4db51258b89403c9fbda4ec291e6181);
+            
+
+            regular_polygon_marker_87df346533724683b573344ee352083a.bindPopup(popup_0ff6410e369d4863a91008dc0d3f893d);
+
+            
+        
+        
+            
+            var regular_polygon_marker_154fb3dabbcb4ff4b0997ec1baba13be = new L.RegularPolygonMarker(
+                new L.LatLng(1.29340027182,103.784497605),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_13a7e7fc94694c89a9874573a5d50134 = L.popup({maxWidth: '300'});
+
+            
+                var html_20fc3b34089746eba151f93061d305cc = $('         <div id="html_20fc3b34089746eba151f93061d305cc"                 style="width: 100.0%; height: 100.0%;">                 Kent Ridge</div>                 ')[0];
+                popup_13a7e7fc94694c89a9874573a5d50134.setContent(html_20fc3b34089746eba151f93061d305cc);
+            
+
+            regular_polygon_marker_154fb3dabbcb4ff4b0997ec1baba13be.bindPopup(popup_13a7e7fc94694c89a9874573a5d50134);
+
+            
+        
+        
+            
+            var regular_polygon_marker_5c1079078072449f85e0b8f6c1624c66 = new L.RegularPolygonMarker(
+                new L.LatLng(1.36936091787,103.764696857),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_11ba59b9b5414bea9a6338cb032349ad = L.popup({maxWidth: '300'});
+
+            
+                var html_f3a7b8d3713c4be9935287658eb3eb04 = $('         <div id="html_f3a7b8d3713c4be9935287658eb3eb04"                 style="width: 100.0%; height: 100.0%;">                 Cashew</div>                 ')[0];
+                popup_11ba59b9b5414bea9a6338cb032349ad.setContent(html_f3a7b8d3713c4be9935287658eb3eb04);
+            
+
+            regular_polygon_marker_5c1079078072449f85e0b8f6c1624c66.bindPopup(popup_11ba59b9b5414bea9a6338cb032349ad);
+
+            
+        
+        
+            
+            var regular_polygon_marker_d97572c30e764ab0bc111ed4ec539a30 = new L.RegularPolygonMarker(
+                new L.LatLng(1.29325923372,103.855611397),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_0bce3d1f5a90409fa876e1aa67042829 = L.popup({maxWidth: '300'});
+
+            
+                var html_3a1b24cb0ceb4a9b8f483dc4a97b13b1 = $('         <div id="html_3a1b24cb0ceb4a9b8f483dc4a97b13b1"                 style="width: 100.0%; height: 100.0%;">                 Esplanade</div>                 ')[0];
+                popup_0bce3d1f5a90409fa876e1aa67042829.setContent(html_3a1b24cb0ceb4a9b8f483dc4a97b13b1);
+            
+
+            regular_polygon_marker_d97572c30e764ab0bc111ed4ec539a30.bindPopup(popup_0bce3d1f5a90409fa876e1aa67042829);
+
+            
+        
+        
+            
+            var regular_polygon_marker_52ff60ef4c424c7b9e5109c4fe4fa089 = new L.RegularPolygonMarker(
+                new L.LatLng(1.32103740148,103.912947195),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_6ec1ae162c124c0a9f5e110256d3eeb4 = L.popup({maxWidth: '300'});
+
+            
+                var html_d42f684221774a5f9e9352af1b8cb762 = $('         <div id="html_d42f684221774a5f9e9352af1b8cb762"                 style="width: 100.0%; height: 100.0%;">                 Kembangan</div>                 ')[0];
+                popup_6ec1ae162c124c0a9f5e110256d3eeb4.setContent(html_d42f684221774a5f9e9352af1b8cb762);
+            
+
+            regular_polygon_marker_52ff60ef4c424c7b9e5109c4fe4fa089.bindPopup(popup_6ec1ae162c124c0a9f5e110256d3eeb4);
+
+            
+        
+        
+            
+            var regular_polygon_marker_a110116484ca4472aaa268f36ef2b315 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33454869445,103.961545896),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_71f7240d7f134302a8986df49b237e43 = L.popup({maxWidth: '300'});
+
+            
+                var html_80a4f01bab3b48c9ae859bf840ca2388 = $('         <div id="html_80a4f01bab3b48c9ae859bf840ca2388"                 style="width: 100.0%; height: 100.0%;">                 Expo</div>                 ')[0];
+                popup_71f7240d7f134302a8986df49b237e43.setContent(html_80a4f01bab3b48c9ae859bf840ca2388);
+            
+
+            regular_polygon_marker_a110116484ca4472aaa268f36ef2b315.bindPopup(popup_71f7240d7f134302a8986df49b237e43);
+
+            
+        
+        
+            
+            var regular_polygon_marker_3e31680308014ff1b622525ed6e2de80 = new L.RegularPolygonMarker(
+                new L.LatLng(1.28020971615,103.839353559),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_86f0dc68ddde44529bf5b8e896bd9b84 = L.popup({maxWidth: '300'});
+
+            
+                var html_c448e0081555482e92ec790f285eb849 = $('         <div id="html_c448e0081555482e92ec790f285eb849"                 style="width: 100.0%; height: 100.0%;">                 Outram Park Interchange</div>                 ')[0];
+                popup_86f0dc68ddde44529bf5b8e896bd9b84.setContent(html_c448e0081555482e92ec790f285eb849);
+            
+
+            regular_polygon_marker_3e31680308014ff1b622525ed6e2de80.bindPopup(popup_86f0dc68ddde44529bf5b8e896bd9b84);
+
+            
+        
+        
+            
+            var regular_polygon_marker_6c60307bb6e84938b012301e2b4146e8 = new L.RegularPolygonMarker(
+                new L.LatLng(1.3002569488,103.839075094),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_3419616af6db48018d252d8fed8b7a02 = L.popup({maxWidth: '300'});
+
+            
+                var html_40538937f10f45a5b5f26e3aed68f253 = $('         <div id="html_40538937f10f45a5b5f26e3aed68f253"                 style="width: 100.0%; height: 100.0%;">                 Somerset</div>                 ')[0];
+                popup_3419616af6db48018d252d8fed8b7a02.setContent(html_40538937f10f45a5b5f26e3aed68f253);
+            
+
+            regular_polygon_marker_6c60307bb6e84938b012301e2b4146e8.bindPopup(popup_3419616af6db48018d252d8fed8b7a02);
+
+            
+        
+        
+            
+            var regular_polygon_marker_bba033bbe27946619aeaa73078c13d49 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33765788077,103.839540881),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_0e5939fe53b74019b74f246b130c2f66 = L.popup({maxWidth: '300'});
+
+            
+                var html_4370257081024336a03aecd18cd2850f = $('         <div id="html_4370257081024336a03aecd18cd2850f"                 style="width: 100.0%; height: 100.0%;">                 Caldecott</div>                 ')[0];
+                popup_0e5939fe53b74019b74f246b130c2f66.setContent(html_4370257081024336a03aecd18cd2850f);
+            
+
+            regular_polygon_marker_bba033bbe27946619aeaa73078c13d49.bindPopup(popup_0e5939fe53b74019b74f246b130c2f66);
+
+            
+        
+        
+            
+            var regular_polygon_marker_0b3ca7649b484812a4cd33ec4f5319d9 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30244697999,103.798290385),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_f97ace7a4f424362986e344b1b7ba2ee = L.popup({maxWidth: '300'});
+
+            
+                var html_d34f6ae1c3d640d688574e34ff2c434b = $('         <div id="html_d34f6ae1c3d640d688574e34ff2c434b"                 style="width: 100.0%; height: 100.0%;">                 Commonwealth</div>                 ')[0];
+                popup_f97ace7a4f424362986e344b1b7ba2ee.setContent(html_d34f6ae1c3d640d688574e34ff2c434b);
+            
+
+            regular_polygon_marker_0b3ca7649b484812a4cd33ec4f5319d9.bindPopup(popup_f97ace7a4f424362986e344b1b7ba2ee);
+
+            
+        
+        
+            
+            var regular_polygon_marker_88c6731766f1451ab739883ad31c0667 = new L.RegularPolygonMarker(
+                new L.LatLng(1.36994799258,103.84961602),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_19c7478d158e43b1a718e0fb721ad84d = L.popup({maxWidth: '300'});
+
+            
+                var html_7dbc53ef4aa94c3db19564c94792d153 = $('         <div id="html_7dbc53ef4aa94c3db19564c94792d153"                 style="width: 100.0%; height: 100.0%;">                 Ang Mo Kio</div>                 ')[0];
+                popup_19c7478d158e43b1a718e0fb721ad84d.setContent(html_7dbc53ef4aa94c3db19564c94792d153);
+            
+
+            regular_polygon_marker_88c6731766f1451ab739883ad31c0667.bindPopup(popup_19c7478d158e43b1a718e0fb721ad84d);
+
+            
+        
+        
+            
+            var regular_polygon_marker_91cc0f63509a466db67fd13956992cda = new L.RegularPolygonMarker(
+                new L.LatLng(1.30393707871,103.832218997),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_b2ee33f5177f428b9ef4fe8f8a0ae350 = L.popup({maxWidth: '300'});
+
+            
+                var html_8762af7c456442d095b717b2129a8a6a = $('         <div id="html_8762af7c456442d095b717b2129a8a6a"                 style="width: 100.0%; height: 100.0%;">                 Orchard</div>                 ')[0];
+                popup_b2ee33f5177f428b9ef4fe8f8a0ae350.setContent(html_8762af7c456442d095b717b2129a8a6a);
+            
+
+            regular_polygon_marker_91cc0f63509a466db67fd13956992cda.bindPopup(popup_b2ee33f5177f428b9ef4fe8f8a0ae350);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b1c8f099452b43b9a12af860a710ede7 = new L.RegularPolygonMarker(
+                new L.LatLng(1.40513192399,103.902373645),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c8cbb8a5429d443a8c2749b20a6b39bf = L.popup({maxWidth: '300'});
+
+            
+                var html_db561d72e84945748a05d29acfed2ad3 = $('         <div id="html_db561d72e84945748a05d29acfed2ad3"                 style="width: 100.0%; height: 100.0%;">                 Punggol</div>                 ')[0];
+                popup_c8cbb8a5429d443a8c2749b20a6b39bf.setContent(html_db561d72e84945748a05d29acfed2ad3);
+            
+
+            regular_polygon_marker_b1c8f099452b43b9a12af860a710ede7.bindPopup(popup_c8cbb8a5429d443a8c2749b20a6b39bf);
+
+            
+        
+        
+            
+            var regular_polygon_marker_dcb6d59c0e034833a9e49630da3ab5d9 = new L.RegularPolygonMarker(
+                new L.LatLng(1.27651436494,103.84585325),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_4bff738d541d48e9845aa741d2a36c85 = L.popup({maxWidth: '300'});
+
+            
+                var html_13468b9b8afb4d709ebeed9258b4f5ef = $('         <div id="html_13468b9b8afb4d709ebeed9258b4f5ef"                 style="width: 100.0%; height: 100.0%;">                 Tanjong Pagar</div>                 ')[0];
+                popup_4bff738d541d48e9845aa741d2a36c85.setContent(html_13468b9b8afb4d709ebeed9258b4f5ef);
+            
+
+            regular_polygon_marker_dcb6d59c0e034833a9e49630da3ab5d9.bindPopup(popup_4bff738d541d48e9845aa741d2a36c85);
+
+            
+        
+        
+            
+            var regular_polygon_marker_24c5606b7f474f57a495bdf255af90b0 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30737106383,103.862837468),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_8bac2a14c8f54b4d8fccffd89a83458a = L.popup({maxWidth: '300'});
+
+            
+                var html_5ade7d16801342db919bc4a40ffb87cd = $('         <div id="html_5ade7d16801342db919bc4a40ffb87cd"                 style="width: 100.0%; height: 100.0%;">                 Lavender</div>                 ')[0];
+                popup_8bac2a14c8f54b4d8fccffd89a83458a.setContent(html_5ade7d16801342db919bc4a40ffb87cd);
+            
+
+            regular_polygon_marker_24c5606b7f474f57a495bdf255af90b0.bindPopup(popup_8bac2a14c8f54b4d8fccffd89a83458a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_f4dbe6a722914164a83b554012f84b99 = new L.RegularPolygonMarker(
+                new L.LatLng(1.3510853063,103.848775248),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e89ebd70ebb9444cac17ab31bfb3476f = L.popup({maxWidth: '300'});
+
+            
+                var html_00a9d1443eb04bbbae389a6da311974d = $('         <div id="html_00a9d1443eb04bbbae389a6da311974d"                 style="width: 100.0%; height: 100.0%;">                 Bishan Interchange</div>                 ')[0];
+                popup_e89ebd70ebb9444cac17ab31bfb3476f.setContent(html_00a9d1443eb04bbbae389a6da311974d);
+            
+
+            regular_polygon_marker_f4dbe6a722914164a83b554012f84b99.bindPopup(popup_e89ebd70ebb9444cac17ab31bfb3476f);
+
+            
+        
+        
+            
+            var regular_polygon_marker_382b7fa8d1b8433eb201f3513b6892d3 = new L.RegularPolygonMarker(
+                new L.LatLng(1.30837448801,103.888667966),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_cb0aeddaa5a04fd7a28a803d769f9e8b = L.popup({maxWidth: '300'});
+
+            
+                var html_e530ea40a01d45aeb82947def71bad65 = $('         <div id="html_e530ea40a01d45aeb82947def71bad65"                 style="width: 100.0%; height: 100.0%;">                 Dakota</div>                 ')[0];
+                popup_cb0aeddaa5a04fd7a28a803d769f9e8b.setContent(html_e530ea40a01d45aeb82947def71bad65);
+            
+
+            regular_polygon_marker_382b7fa8d1b8433eb201f3513b6892d3.bindPopup(popup_cb0aeddaa5a04fd7a28a803d769f9e8b);
+
+            
+        
+        
+            
+            var regular_polygon_marker_44efe58af66f4d8a99549eafc70fe3c4 = new L.RegularPolygonMarker(
+                new L.LatLng(1.29682610705,103.850655178),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_591f53fb1f624a5fb85942d08494cbcb = L.popup({maxWidth: '300'});
+
+            
+                var html_bcbe5f698d0f44a2b5369e97c3c4afaf = $('         <div id="html_bcbe5f698d0f44a2b5369e97c3c4afaf"                 style="width: 100.0%; height: 100.0%;">                 Bras Basah</div>                 ')[0];
+                popup_591f53fb1f624a5fb85942d08494cbcb.setContent(html_bcbe5f698d0f44a2b5369e97c3c4afaf);
+            
+
+            regular_polygon_marker_44efe58af66f4d8a99549eafc70fe3c4.bindPopup(popup_591f53fb1f624a5fb85942d08494cbcb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4bc7c00f5d254d08a518b5ae2e36c03a = new L.RegularPolygonMarker(
+                new L.LatLng(1.43256450215,103.774193669),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_dcea0003e7874ffc8fdac88dd1936132 = L.popup({maxWidth: '300'});
+
+            
+                var html_f6474208a588470f814ad1bc5ad380da = $('         <div id="html_f6474208a588470f814ad1bc5ad380da"                 style="width: 100.0%; height: 100.0%;">                 Marsiling</div>                 ')[0];
+                popup_dcea0003e7874ffc8fdac88dd1936132.setContent(html_f6474208a588470f814ad1bc5ad380da);
+            
+
+            regular_polygon_marker_4bc7c00f5d254d08a518b5ae2e36c03a.bindPopup(popup_dcea0003e7874ffc8fdac88dd1936132);
+
+            
+        
+        
+            
+            var regular_polygon_marker_d4fd7d5aaba843e7bf7f6eb025014b7b = new L.RegularPolygonMarker(
+                new L.LatLng(1.34899597963,103.749540323),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e344bb96953741d9a9940a51d0a71007 = L.popup({maxWidth: '300'});
+
+            
+                var html_bf3c2cae61ff4ba795f8e5031eddb007 = $('         <div id="html_bf3c2cae61ff4ba795f8e5031eddb007"                 style="width: 100.0%; height: 100.0%;">                 Bukit Batok</div>                 ')[0];
+                popup_e344bb96953741d9a9940a51d0a71007.setContent(html_bf3c2cae61ff4ba795f8e5031eddb007);
+            
+
+            regular_polygon_marker_d4fd7d5aaba843e7bf7f6eb025014b7b.bindPopup(popup_e344bb96953741d9a9940a51d0a71007);
+
+            
+        
+        
+            
+            var regular_polygon_marker_837a6e202bcc4d19a0fc98b45024b5cf = new L.RegularPolygonMarker(
+                new L.LatLng(1.39152701501,103.895415747),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_3f26899950604e708361604258bb1cff = L.popup({maxWidth: '300'});
+
+            
+                var html_e6562a09d51b4e559645cc61bd6e2f65 = $('         <div id="html_e6562a09d51b4e559645cc61bd6e2f65"                 style="width: 100.0%; height: 100.0%;">                 Sengkang</div>                 ')[0];
+                popup_3f26899950604e708361604258bb1cff.setContent(html_e6562a09d51b4e559645cc61bd6e2f65);
+            
+
+            regular_polygon_marker_837a6e202bcc4d19a0fc98b45024b5cf.bindPopup(popup_3f26899950604e708361604258bb1cff);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b0cb1d5b1ae143afa2fc3be2774cdfaa = new L.RegularPolygonMarker(
+                new L.LatLng(1.37295120806,103.949257305),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_4a2c222a01694fb2aac6097581d4bae8 = L.popup({maxWidth: '300'});
+
+            
+                var html_071af0869d3f4c82998a05e2755f6930 = $('         <div id="html_071af0869d3f4c82998a05e2755f6930"                 style="width: 100.0%; height: 100.0%;">                 Pasir Ris</div>                 ')[0];
+                popup_4a2c222a01694fb2aac6097581d4bae8.setContent(html_071af0869d3f4c82998a05e2755f6930);
+            
+
+            regular_polygon_marker_b0cb1d5b1ae143afa2fc3be2774cdfaa.bindPopup(popup_4a2c222a01694fb2aac6097581d4bae8);
+
+            
+        
+        
+            
+            var regular_polygon_marker_c00e060cb4554cc5a63872390043fe91 = new L.RegularPolygonMarker(
+                new L.LatLng(1.32006528777,103.826022693),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_a214b8f8e7384d809876e24c62f0badd = L.popup({maxWidth: '300'});
+
+            
+                var html_67d030b3b3fe4e339ccb1a4b151d94c6 = $('         <div id="html_67d030b3b3fe4e339ccb1a4b151d94c6"                 style="width: 100.0%; height: 100.0%;">                 Stevens</div>                 ')[0];
+                popup_a214b8f8e7384d809876e24c62f0badd.setContent(html_67d030b3b3fe4e339ccb1a4b151d94c6);
+            
+
+            regular_polygon_marker_c00e060cb4554cc5a63872390043fe91.bindPopup(popup_a214b8f8e7384d809876e24c62f0badd);
+
+            
+        
+        
+            
+            var regular_polygon_marker_02d2d031141149bfaa0ffaaa436c0974 = new L.RegularPolygonMarker(
+                new L.LatLng(1.2825022356,103.781820995),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_3a48c4b651fe406fbb85731fa778efbb = L.popup({maxWidth: '300'});
+
+            
+                var html_d9277181a180436b8837fdc3059fa407 = $('         <div id="html_d9277181a180436b8837fdc3059fa407"                 style="width: 100.0%; height: 100.0%;">                 Haw Par Villa</div>                 ')[0];
+                popup_3a48c4b651fe406fbb85731fa778efbb.setContent(html_d9277181a180436b8837fdc3059fa407);
+            
+
+            regular_polygon_marker_02d2d031141149bfaa0ffaaa436c0974.bindPopup(popup_3a48c4b651fe406fbb85731fa778efbb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_f696c837dc0f463580403d45281f3284 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33563744465,103.783871199),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e6049a519f5c46cabc9ee3a5d0bf2279 = L.popup({maxWidth: '300'});
+
+            
+                var html_64370de9cbb8479a87f4c67a9c921cfa = $('         <div id="html_64370de9cbb8479a87f4c67a9c921cfa"                 style="width: 100.0%; height: 100.0%;">                 King Albert</div>                 ')[0];
+                popup_e6049a519f5c46cabc9ee3a5d0bf2279.setContent(html_64370de9cbb8479a87f4c67a9c921cfa);
+            
+
+            regular_polygon_marker_f696c837dc0f463580403d45281f3284.bindPopup(popup_e6049a519f5c46cabc9ee3a5d0bf2279);
+
+            
+        
+        
+            
+            var regular_polygon_marker_3c751eed53cc43b6a8b27007c2d32b7a = new L.RegularPolygonMarker(
+                new L.LatLng(1.30392689359,103.852438552),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_24022e7516194ae4baa06dad9bb47b9a = L.popup({maxWidth: '300'});
+
+            
+                var html_6130c185059c43629fc10cb4a915bdcb = $('         <div id="html_6130c185059c43629fc10cb4a915bdcb"                 style="width: 100.0%; height: 100.0%;">                 Rochor</div>                 ')[0];
+                popup_24022e7516194ae4baa06dad9bb47b9a.setContent(html_6130c185059c43629fc10cb4a915bdcb);
+            
+
+            regular_polygon_marker_3c751eed53cc43b6a8b27007c2d32b7a.bindPopup(popup_24022e7516194ae4baa06dad9bb47b9a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_996cd4a69c714550a92a1548006b4f70 = new L.RegularPolygonMarker(
+                new L.LatLng(1.28444671197,103.843931697),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_ec4ec47ec5524d58aa5b943b7151612a = L.popup({maxWidth: '300'});
+
+            
+                var html_2c6d2c6b0aad410fbeffb2fdd5487a09 = $('         <div id="html_2c6d2c6b0aad410fbeffb2fdd5487a09"                 style="width: 100.0%; height: 100.0%;">                 Chinatown</div>                 ')[0];
+                popup_ec4ec47ec5524d58aa5b943b7151612a.setContent(html_2c6d2c6b0aad410fbeffb2fdd5487a09);
+            
+
+            regular_polygon_marker_996cd4a69c714550a92a1548006b4f70.bindPopup(popup_ec4ec47ec5524d58aa5b943b7151612a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_94757dcc789b4c65a64c44d3319c7375 = new L.RegularPolygonMarker(
+                new L.LatLng(1.3827709172,103.893092135),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_084ba9052d1c4b669bab9dc1ff37696e = L.popup({maxWidth: '300'});
+
+            
+                var html_5aadf6533f6c436fa9148089d74272db = $('         <div id="html_5aadf6533f6c436fa9148089d74272db"                 style="width: 100.0%; height: 100.0%;">                 Buangkok</div>                 ')[0];
+                popup_084ba9052d1c4b669bab9dc1ff37696e.setContent(html_5aadf6533f6c436fa9148089d74272db);
+            
+
+            regular_polygon_marker_94757dcc789b4c65a64c44d3319c7375.bindPopup(popup_084ba9052d1c4b669bab9dc1ff37696e);
+
+            
+        
+        
+            
+            var regular_polygon_marker_d9def11a6dbb46109bef2d47a736a5ab = new L.RegularPolygonMarker(
+                new L.LatLng(1.28406660417,103.851458982),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e447899629b349d9a1ff9fe6973c6ed3 = L.popup({maxWidth: '300'});
+
+            
+                var html_b5c9f31f40e74622b28ebcaae5f85225 = $('         <div id="html_b5c9f31f40e74622b28ebcaae5f85225"                 style="width: 100.0%; height: 100.0%;">                 Raffles Place Interchange</div>                 ')[0];
+                popup_e447899629b349d9a1ff9fe6973c6ed3.setContent(html_b5c9f31f40e74622b28ebcaae5f85225);
+            
+
+            regular_polygon_marker_d9def11a6dbb46109bef2d47a736a5ab.bindPopup(popup_e447899629b349d9a1ff9fe6973c6ed3);
+
+            
+        
+        
+            
+            var regular_polygon_marker_3a31547026fd463c9715150a61f3f442 = new L.RegularPolygonMarker(
+                new L.LatLng(1.44058642323,103.800976675),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_77dc7894d897485ab5e7929325d6e319 = L.popup({maxWidth: '300'});
+
+            
+                var html_90d1fbc845184569bd123807b64ac25e = $('         <div id="html_90d1fbc845184569bd123807b64ac25e"                 style="width: 100.0%; height: 100.0%;">                 Admiralty</div>                 ')[0];
+                popup_77dc7894d897485ab5e7929325d6e319.setContent(html_90d1fbc845184569bd123807b64ac25e);
+            
+
+            regular_polygon_marker_3a31547026fd463c9715150a61f3f442.bindPopup(popup_77dc7894d897485ab5e7929325d6e319);
+
+            
+        
+        
+            
+            var regular_polygon_marker_5abc85ff414045a880d37b51c0bc08d1 = new L.RegularPolygonMarker(
+                new L.LatLng(1.31643180616,103.88290571),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_9b003f81a6a648d496eb539ef5cb3267 = L.popup({maxWidth: '300'});
+
+            
+                var html_c701d5e060db41489424372abeee160a = $('         <div id="html_c701d5e060db41489424372abeee160a"                 style="width: 100.0%; height: 100.0%;">                 Aljunied</div>                 ')[0];
+                popup_9b003f81a6a648d496eb539ef5cb3267.setContent(html_c701d5e060db41489424372abeee160a);
+            
+
+            regular_polygon_marker_5abc85ff414045a880d37b51c0bc08d1.bindPopup(popup_9b003f81a6a648d496eb539ef5cb3267);
+
+            
+        
+        
+            
+            var regular_polygon_marker_c372f39b82b44bdca5af602ba6a014de = new L.RegularPolygonMarker(
+                new L.LatLng(1.35000482396,103.873136941),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_30127ad7691a433685df02222eca2aed = L.popup({maxWidth: '300'});
+
+            
+                var html_aaaaf489c5424f619762fb25f5bebe9b = $('         <div id="html_aaaaf489c5424f619762fb25f5bebe9b"                 style="width: 100.0%; height: 100.0%;">                 Serangoon Interchange</div>                 ')[0];
+                popup_30127ad7691a433685df02222eca2aed.setContent(html_aaaaf489c5424f619762fb25f5bebe9b);
+            
+
+            regular_polygon_marker_c372f39b82b44bdca5af602ba6a014de.bindPopup(popup_30127ad7691a433685df02222eca2aed);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2bcb079cef774667afeec31861f9ff8b = new L.RegularPolygonMarker(
+                new L.LatLng(1.29937465722,103.845715118),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_bad1d0ab660545d281f5d70f44050573 = L.popup({maxWidth: '300'});
+
+            
+                var html_1b261489bd074705b75e3d668022caa7 = $('         <div id="html_1b261489bd074705b75e3d668022caa7"                 style="width: 100.0%; height: 100.0%;">                 Dhoby Ghaut Interchange</div>                 ')[0];
+                popup_bad1d0ab660545d281f5d70f44050573.setContent(html_1b261489bd074705b75e3d668022caa7);
+            
+
+            regular_polygon_marker_2bcb079cef774667afeec31861f9ff8b.bindPopup(popup_bad1d0ab660545d281f5d70f44050573);
+
+            
+        
+        
+            
+            var regular_polygon_marker_318734518b65430aa1c9800c2053f5b3 = new L.RegularPolygonMarker(
+                new L.LatLng(1.31766774396,103.892594694),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_85b1355cf7154d7eb8da1eca89e1ec1f = L.popup({maxWidth: '300'});
+
+            
+                var html_938af5399b8540efa82dff5ebafc75d4 = $('         <div id="html_938af5399b8540efa82dff5ebafc75d4"                 style="width: 100.0%; height: 100.0%;">                 Paya Lebar Interchange</div>                 ')[0];
+                popup_85b1355cf7154d7eb8da1eca89e1ec1f.setContent(html_938af5399b8540efa82dff5ebafc75d4);
+            
+
+            regular_polygon_marker_318734518b65430aa1c9800c2053f5b3.bindPopup(popup_85b1355cf7154d7eb8da1eca89e1ec1f);
+
+            
+        
+        
+            
+            var regular_polygon_marker_216a98309ddc488f9b70728386c00f9f = new L.RegularPolygonMarker(
+                new L.LatLng(1.27232282734,103.802927372),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e80398b2a17f438eb9b94bf6f91ef0b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ae1ca1b0c304f48a876a47c780504b3 = $('         <div id="html_7ae1ca1b0c304f48a876a47c780504b3"                 style="width: 100.0%; height: 100.0%;">                 Labrador Park</div>                 ')[0];
+                popup_e80398b2a17f438eb9b94bf6f91ef0b5.setContent(html_7ae1ca1b0c304f48a876a47c780504b3);
+            
+
+            regular_polygon_marker_216a98309ddc488f9b70728386c00f9f.bindPopup(popup_e80398b2a17f438eb9b94bf6f91ef0b5);
+
+            
+        
+        
+            
+            var regular_polygon_marker_45b5076a8f564e2995c297e5fd13dd3c = new L.RegularPolygonMarker(
+                new L.LatLng(1.36017920414,103.885090783),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_896da816b16847d7b05ba92efee01823 = L.popup({maxWidth: '300'});
+
+            
+                var html_4237e26f1b7740788206966a91a5440a = $('         <div id="html_4237e26f1b7740788206966a91a5440a"                 style="width: 100.0%; height: 100.0%;">                 Kovan</div>                 ')[0];
+                popup_896da816b16847d7b05ba92efee01823.setContent(html_4237e26f1b7740788206966a91a5440a);
+            
+
+            regular_polygon_marker_45b5076a8f564e2995c297e5fd13dd3c.bindPopup(popup_896da816b16847d7b05ba92efee01823);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2b8205cb23284a91b000ca89128dd7f7 = new L.RegularPolygonMarker(
+                new L.LatLng(1.32401065235,103.930172187),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_6f7babe8cdf24563b7a3b50f4dc0cf1d = L.popup({maxWidth: '300'});
+
+            
+                var html_39ad68862b094dad98ffe7ee86536278 = $('         <div id="html_39ad68862b094dad98ffe7ee86536278"                 style="width: 100.0%; height: 100.0%;">                 Bedok</div>                 ')[0];
+                popup_6f7babe8cdf24563b7a3b50f4dc0cf1d.setContent(html_39ad68862b094dad98ffe7ee86536278);
+            
+
+            regular_polygon_marker_2b8205cb23284a91b000ca89128dd7f7.bindPopup(popup_6f7babe8cdf24563b7a3b50f4dc0cf1d);
+
+            
+        
+        
+            
+            var regular_polygon_marker_f62f0ccbd35f4181ba7d78d3339ebbc1 = new L.RegularPolygonMarker(
+                new L.LatLng(1.29293257069,103.852608171),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_84c1449339d343c5a0388d0a755fb751 = L.popup({maxWidth: '300'});
+
+            
+                var html_f264449c97a24cbcb7e2f05f6f97b5c5 = $('         <div id="html_f264449c97a24cbcb7e2f05f6f97b5c5"                 style="width: 100.0%; height: 100.0%;">                 City Hall Interchange</div>                 ')[0];
+                popup_84c1449339d343c5a0388d0a755fb751.setContent(html_f264449c97a24cbcb7e2f05f6f97b5c5);
+            
+
+            regular_polygon_marker_f62f0ccbd35f4181ba7d78d3339ebbc1.bindPopup(popup_84c1449339d343c5a0388d0a755fb751);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4b0a9fcd387a48bfbf14f3c84189bef7 = new L.RegularPolygonMarker(
+                new L.LatLng(1.34319677165,103.953376785),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_08b45f0c3aab4617af0846348aeca564 = L.popup({maxWidth: '300'});
+
+            
+                var html_b19bdb45ca0b400880d6e90ed28d3060 = $('         <div id="html_b19bdb45ca0b400880d6e90ed28d3060"                 style="width: 100.0%; height: 100.0%;">                 Simei</div>                 ')[0];
+                popup_08b45f0c3aab4617af0846348aeca564.setContent(html_b19bdb45ca0b400880d6e90ed28d3060);
+            
+
+            regular_polygon_marker_4b0a9fcd387a48bfbf14f3c84189bef7.bindPopup(popup_08b45f0c3aab4617af0846348aeca564);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e409a788b66a4d0b97de40fc7a6ffa35 = new L.RegularPolygonMarker(
+                new L.LatLng(1.38175694016,103.84480049),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_dd4ac435abbc4f1187906aee1cced2a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_b0129f8c7ff94b03945a94348c1fdbaa = $('         <div id="html_b0129f8c7ff94b03945a94348c1fdbaa"                 style="width: 100.0%; height: 100.0%;">                 Yio Chu Kang</div>                 ')[0];
+                popup_dd4ac435abbc4f1187906aee1cced2a7.setContent(html_b0129f8c7ff94b03945a94348c1fdbaa);
+            
+
+            regular_polygon_marker_e409a788b66a4d0b97de40fc7a6ffa35.bindPopup(popup_dd4ac435abbc4f1187906aee1cced2a7);
+
+            
+        
+        
+            
+            var regular_polygon_marker_083b869abf2d4cfbace7d92e81a68541 = new L.RegularPolygonMarker(
+                new L.LatLng(1.32042941484,103.843817797),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_7f6f98694a6147cea9d4a15fb82e2c6d = L.popup({maxWidth: '300'});
+
+            
+                var html_ded1f47b8c2945a688562162da5780eb = $('         <div id="html_ded1f47b8c2945a688562162da5780eb"                 style="width: 100.0%; height: 100.0%;">                 Novena</div>                 ')[0];
+                popup_7f6f98694a6147cea9d4a15fb82e2c6d.setContent(html_ded1f47b8c2945a688562162da5780eb);
+            
+
+            regular_polygon_marker_083b869abf2d4cfbace7d92e81a68541.bindPopup(popup_7f6f98694a6147cea9d4a15fb82e2c6d);
+
+            
+        
+        
+            
+            var regular_polygon_marker_11084fc6c85d46539c74a296a8d6c56e = new L.RegularPolygonMarker(
+                new L.LatLng(1.31944642353,103.861680752),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_b240e9d4bd704843a7200caf503247ce = L.popup({maxWidth: '300'});
+
+            
+                var html_920e217fa20246c4ac42d37481ede39e = $('         <div id="html_920e217fa20246c4ac42d37481ede39e"                 style="width: 100.0%; height: 100.0%;">                 Boon Keng</div>                 ')[0];
+                popup_b240e9d4bd704843a7200caf503247ce.setContent(html_920e217fa20246c4ac42d37481ede39e);
+            
+
+            regular_polygon_marker_11084fc6c85d46539c74a296a8d6c56e.bindPopup(popup_b240e9d4bd704843a7200caf503247ce);
+
+            
+        
+        
+            
+            var regular_polygon_marker_673b855fdf654d128d9c3031f33b6b3e = new L.RegularPolygonMarker(
+                new L.LatLng(1.32771619201,103.678386596),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_5b81d8848d57461083ce2bdad183ee97 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a83068e0f934dab8d40454de0b66873 = $('         <div id="html_5a83068e0f934dab8d40454de0b66873"                 style="width: 100.0%; height: 100.0%;">                 Joo Koon</div>                 ')[0];
+                popup_5b81d8848d57461083ce2bdad183ee97.setContent(html_5a83068e0f934dab8d40454de0b66873);
+            
+
+            regular_polygon_marker_673b855fdf654d128d9c3031f33b6b3e.bindPopup(popup_5b81d8848d57461083ce2bdad183ee97);
+
+            
+        
+        
+            
+            var regular_polygon_marker_76c24758b05a4eeaab9820f5f43279f0 = new L.RegularPolygonMarker(
+                new L.LatLng(1.31244756143,103.854269825),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_b31d36d4e51248249d14eaac1fd6a1e6 = L.popup({maxWidth: '300'});
+
+            
+                var html_3764ea364bef4d5db60522c76cb3cac3 = $('         <div id="html_3764ea364bef4d5db60522c76cb3cac3"                 style="width: 100.0%; height: 100.0%;">                 Farrer Park</div>                 ')[0];
+                popup_b31d36d4e51248249d14eaac1fd6a1e6.setContent(html_3764ea364bef4d5db60522c76cb3cac3);
+            
+
+            regular_polygon_marker_76c24758b05a4eeaab9820f5f43279f0.bindPopup(popup_b31d36d4e51248249d14eaac1fd6a1e6);
+
+            
+        
+        
+            
+            var regular_polygon_marker_ab4d9871f21e4068ac55c88d5398fa8d = new L.RegularPolygonMarker(
+                new L.LatLng(1.36233942287,103.767428919),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c8e04091974341ef8e9acd26a4c1bf0e = L.popup({maxWidth: '300'});
+
+            
+                var html_7e6d7b9a6ea949bb97ef4b7bc118b02e = $('         <div id="html_7e6d7b9a6ea949bb97ef4b7bc118b02e"                 style="width: 100.0%; height: 100.0%;">                 Hillview</div>                 ')[0];
+                popup_c8e04091974341ef8e9acd26a4c1bf0e.setContent(html_7e6d7b9a6ea949bb97ef4b7bc118b02e);
+            
+
+            regular_polygon_marker_ab4d9871f21e4068ac55c88d5398fa8d.bindPopup(popup_c8e04091974341ef8e9acd26a4c1bf0e);
+
+            
+        
+        
+            
+            var regular_polygon_marker_ee912258af1542cb8acc35e2d9baf3ff = new L.RegularPolygonMarker(
+                new L.LatLng(1.34284617731,103.879724854),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c4311f539bfd47a8961ae2a55cbb8301 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e3fa9731b3f4a8a838f50172d1c53dd = $('         <div id="html_4e3fa9731b3f4a8a838f50172d1c53dd"                 style="width: 100.0%; height: 100.0%;">                 Bartley</div>                 ')[0];
+                popup_c4311f539bfd47a8961ae2a55cbb8301.setContent(html_4e3fa9731b3f4a8a838f50172d1c53dd);
+            
+
+            regular_polygon_marker_ee912258af1542cb8acc35e2d9baf3ff.bindPopup(popup_c4311f539bfd47a8961ae2a55cbb8301);
+
+            
+        
+        
+            
+            var regular_polygon_marker_77bfda5090dd4ff2b8972ec72cc08094 = new L.RegularPolygonMarker(
+                new L.LatLng(1.28854154936,103.84660446),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_ee201683466a48bfb48e452521c6f192 = L.popup({maxWidth: '300'});
+
+            
+                var html_a9b55d63174743049171de2db74ebe20 = $('         <div id="html_a9b55d63174743049171de2db74ebe20"                 style="width: 100.0%; height: 100.0%;">                 Clarke Quay</div>                 ')[0];
+                popup_ee201683466a48bfb48e452521c6f192.setContent(html_a9b55d63174743049171de2db74ebe20);
+            
+
+            regular_polygon_marker_77bfda5090dd4ff2b8972ec72cc08094.bindPopup(popup_ee201683466a48bfb48e452521c6f192);
+
+            
+        
+        
+            
+            var regular_polygon_marker_86edf5c6e9f2486cab6cde6c0b5743f7 = new L.RegularPolygonMarker(
+                new L.LatLng(1.28227991762,103.848312515),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_2bed8eedda5543e39f774df983e0d65b = L.popup({maxWidth: '300'});
+
+            
+                var html_9f3f1f3ab9344b388445c9de35448ea5 = $('         <div id="html_9f3f1f3ab9344b388445c9de35448ea5"                 style="width: 100.0%; height: 100.0%;">                 Telok Ayer</div>                 ')[0];
+                popup_2bed8eedda5543e39f774df983e0d65b.setContent(html_9f3f1f3ab9344b388445c9de35448ea5);
+            
+
+            regular_polygon_marker_86edf5c6e9f2486cab6cde6c0b5743f7.bindPopup(popup_2bed8eedda5543e39f774df983e0d65b);
+
+            
+        
+        
+            
+            var regular_polygon_marker_288f38183cb04566a734da830ade2361 = new L.RegularPolygonMarker(
+                new L.LatLng(1.33860335712,103.706058739),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_9e02b709760f4019978ab8c403ae2b41 = L.popup({maxWidth: '300'});
+
+            
+                var html_3bfcd84e11ed45ac8e71276f0019148d = $('         <div id="html_3bfcd84e11ed45ac8e71276f0019148d"                 style="width: 100.0%; height: 100.0%;">                 Boon Lay</div>                 ')[0];
+                popup_9e02b709760f4019978ab8c403ae2b41.setContent(html_3bfcd84e11ed45ac8e71276f0019148d);
+            
+
+            regular_polygon_marker_288f38183cb04566a734da830ade2361.bindPopup(popup_9e02b709760f4019978ab8c403ae2b41);
+
+            
+        
+        
+            
+            var regular_polygon_marker_af1dc9def5df4da4aec1ce12e9cffee2 = new L.RegularPolygonMarker(
+                new L.LatLng(1.41757614186,103.833037727),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_e52856845e694b88a352a29dc6d5b51b = L.popup({maxWidth: '300'});
+
+            
+                var html_48751d9d441143babf8d8e69826a84dc = $('         <div id="html_48751d9d441143babf8d8e69826a84dc"                 style="width: 100.0%; height: 100.0%;">                 Khatib</div>                 ')[0];
+                popup_e52856845e694b88a352a29dc6d5b51b.setContent(html_48751d9d441143babf8d8e69826a84dc);
+            
+
+            regular_polygon_marker_af1dc9def5df4da4aec1ce12e9cffee2.bindPopup(popup_e52856845e694b88a352a29dc6d5b51b);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2d04e7b21f314c85aca45e67c63e4d75 = new L.RegularPolygonMarker(
+                new L.LatLng(1.43683049446,103.786163393),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_54df52e480a6470cb8e15ea4f09e1846 = L.popup({maxWidth: '300'});
+
+            
+                var html_72918d4bb45e458bbea46cb2f0f0b100 = $('         <div id="html_72918d4bb45e458bbea46cb2f0f0b100"                 style="width: 100.0%; height: 100.0%;">                 Woodlands</div>                 ')[0];
+                popup_54df52e480a6470cb8e15ea4f09e1846.setContent(html_72918d4bb45e458bbea46cb2f0f0b100);
+            
+
+            regular_polygon_marker_2d04e7b21f314c85aca45e67c63e4d75.bindPopup(popup_54df52e480a6470cb8e15ea4f09e1846);
+
+            
+        
+        
+            
+            var regular_polygon_marker_69b308f863c74c7f8c8c725cb3a4a0a8 = new L.RegularPolygonMarker(
+                new L.LatLng(1.35867125523,103.751909776),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_c0f297ad32a44595b7c0cfc280c222a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6e6f8009755a4344952eda332f292bce = $('         <div id="html_6e6f8009755a4344952eda332f292bce"                 style="width: 100.0%; height: 100.0%;">                 Bukit Gombak</div>                 ')[0];
+                popup_c0f297ad32a44595b7c0cfc280c222a9.setContent(html_6e6f8009755a4344952eda332f292bce);
+            
+
+            regular_polygon_marker_69b308f863c74c7f8c8c725cb3a4a0a8.bindPopup(popup_c0f297ad32a44595b7c0cfc280c222a9);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e1fdfab2c6d44e9ba90b109c305732dd = new L.RegularPolygonMarker(
+                new L.LatLng(1.27058111963,103.809739423),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#0f0f0f',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_b218fe7b1308456f9e331cbb7c80f12a);
+            
+        
+            
+            var popup_b164141d8bce4c4abc260532b5a0784d = L.popup({maxWidth: '300'});
+
+            
+                var html_73d2551ed41c4d999891a201aaa2612b = $('         <div id="html_73d2551ed41c4d999891a201aaa2612b"                 style="width: 100.0%; height: 100.0%;">                 Telok Blangah</div>                 ')[0];
+                popup_b164141d8bce4c4abc260532b5a0784d.setContent(html_73d2551ed41c4d999891a201aaa2612b);
+            
+
+            regular_polygon_marker_e1fdfab2c6d44e9ba90b109c305732dd.bindPopup(popup_b164141d8bce4c4abc260532b5a0784d);
+
+            
+        
+        
+        
+        </script>
+        
